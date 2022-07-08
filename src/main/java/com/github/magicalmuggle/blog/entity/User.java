@@ -1,13 +1,19 @@
 package com.github.magicalmuggle.blog.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.Instant;
 
 public class User {
     private Integer id;
     private String username;
+    @JsonIgnore
     private String encryptedPassword;
     private String avatar;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Instant createdAt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Instant updatedAt;
 
     public User(Integer id, String username, String encryptedPassword) {
