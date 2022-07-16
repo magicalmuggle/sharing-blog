@@ -1,7 +1,7 @@
 package com.github.magicalmuggle.blog.service;
 
 import com.github.magicalmuggle.blog.entity.User;
-import com.github.magicalmuggle.blog.mapper.UserMapper;
+import com.github.magicalmuggle.blog.dao.UserMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

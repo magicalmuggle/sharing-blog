@@ -1,4 +1,4 @@
-package com.github.magicalmuggle.blog.mapper;
+package com.github.magicalmuggle.blog.dao;
 
 import com.github.magicalmuggle.blog.entity.User;
 import org.apache.ibatis.annotations.Insert;

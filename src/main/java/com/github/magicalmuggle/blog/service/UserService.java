@@ -1,7 +1,7 @@
 package com.github.magicalmuggle.blog.service;
 
 import com.github.magicalmuggle.blog.entity.User;
-import com.github.magicalmuggle.blog.mapper.UserMapper;
+import com.github.magicalmuggle.blog.dao.UserMapper;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
