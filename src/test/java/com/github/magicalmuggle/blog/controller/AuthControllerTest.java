@@ -84,10 +84,7 @@ class AuthControllerTest {
 
         // 再次检查 /auth 的返回值，处于登录状态
         mvc.perform(get("/auth").session((MockHttpSession) session)).andExpect(status().isOk())
-                .andExpect(result -> {
-                    System.out.println(result.getResponse().getContentAsString(StandardCharsets.UTF_8));
-                    Assertions.assertTrue(result.getResponse().getContentAsString(StandardCharsets.UTF_8).contains("MyUser"));
-                });
+                .andExpect(result -> Assertions.assertTrue(result.getResponse().getContentAsString(StandardCharsets.UTF_8).contains("MyUser")));
 
     }
 }
