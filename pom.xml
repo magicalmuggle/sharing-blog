@@ -197,6 +197,7 @@
                             <arguments>
                                 <argument>rm</argument>
                                 <argument>-f</argument>
+                                <argument>-v</argument>
                                 <argument>mysql-for-test</argument>
                             </arguments>
                         </configuration>
