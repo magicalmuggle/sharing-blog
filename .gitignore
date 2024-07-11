@@ -37,3 +37,6 @@ bin/
 
 *.db
 *.crt
+
+# vscode
+.vscode/
